@@ -20,3 +20,8 @@ jobs:
           go-version: 1.16
       - run: go build -v ./...
       - run: go test -v ./...
+
+      - uses: go-semantic-release/action@v1.12.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          allow-initial-development-versions: true
