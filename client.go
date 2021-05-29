@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/codingpot/paperswithcode-go/models"
 	"net/http"
 	"net/url"
 	"time"
@@ -177,45 +178,47 @@ func (c *Client) sendRequest(req *http.Request, v interface{}) error {
 	return nil
 }
 
-/*
-	GetPapers API is currently broken. need to wait until it gets fixed
-*/
+type PaperListParams struct {
+	Query string
+	Page  int
+	Limit int
+}
 
-// type PaperList struct {
-// 	Count    int    `json:"count"`
-// 	NextPage string `json:"next,omitempty"`
-// 	PrePage  string `json:"previous,omitempty"`
-// 	Results  []struct {
-// 		ID               string   `json:"id"`
-// 		ArxivID          []string `json:"arxiv_id,omitempty"`
-// 		NipsID           []string `json:"nips_id,omitempty"`
-// 		URLAbs           string   `json:"url_abs"`
-// 		URLPdf           string   `json:"url_pdf"`
-// 		Title            string   `json:"title"`
-// 		Abstract         string   `json:"abstract"`
-// 		Authors          []string `json:"authors"`
-// 		Published        string   `json:"published"`
-// 		Conference       []string `json:"conference,omitempty"`
-// 		ConferenceURLAbs []string `json:"conference_url_abs,omitempty"`
-// 		ConferenceURLPdf []string `json:"conference_url_pdf,omitempty"`
-// 		Proceeding       []string `json:"proceeding,omitempty"`
-// 	} `json:"results"`
-// }
+func (p PaperListParams) Build() string {
+	if p.Query == "" {
+		return fmt.Sprintf("items_per_page=%d&page=%d", p.Limit, p.Page)
+	}
+	return fmt.Sprintf("q=%s&items_per_page=%d&page=%d", url.QueryEscape(p.Query), p.Limit, p.Page)
+}
 
-// func (c *Client) GetPapers(ctx context.Context, query string, page int, limit int) (*PaperList, error) {
-// 	url := fmt.Sprintf("%s/papers?q=%s&items_per_page=%d&page=%d", c.BaseURL, url.QueryEscape(query), limit, page)
-// 	req, err := http.NewRequest("GET", url, nil)
+func (c *Client) PaperList(params PaperListParams) (*models.PaperListResult, error) {
+	papersListURL := c.BaseURL + "/papers?" + params.Build()
 
-// 	if err != nil {
-// 		return nil, err
-// 	}
+	request, err := http.NewRequest(http.MethodGet, papersListURL, nil /*body*/)
+	if err != nil {
+		return nil, err
+	}
+	request.Header.Set("Authorization", "Token "+c.apiToken)
 
-// 	req = req.WithContext(ctx)
+	response, err := c.HTTPClient.Get(papersListURL)
+	if err != nil {
+		return nil, err
+	}
 
-// 	res := PaperList{}
-// 	if err := c.sendRequest(req, &res); err != nil {
-// 		return nil, err
-// 	}
+	var paperListResult models.PaperListResult
 
-// 	return &res, nil
-// }
+	err = json.NewDecoder(response.Body).Decode(&paperListResult)
+	if err != nil {
+		return nil, err
+	}
+
+	return &paperListResult, nil
+}
+
+func PaperListParamsDefault() PaperListParams {
+	return PaperListParams{
+		Query: "",
+		Page:  1,
+		Limit: 50,
+	}
+}

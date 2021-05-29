@@ -1,0 +1,923 @@
+{
+  "count": 761618,
+  "next": "https://paperswithcode.com/api/v1/papers/?items_per_page=50&page=2",
+  "previous": null,
+  "results": [
+    {
+      "id": "neural-networks-and-physical-systems-with",
+      "arxiv_id": null,
+      "nips_id": null,
+      "url_abs": "https://www.pnas.org/content/79/8/2554",
+      "url_pdf": "https://www.pnas.org/content/pnas/79/8/2554.full.pdf",
+      "title": "Neural networks and physical systems with emergent collective computational abilities",
+      "abstract": "Computational properties of use of biological organisms or to the construction of computers can emerge as collective properties of systems having a large number of simple equivalent components (or neurons). The physical meaning of content-addressable memory is described by an appropriate phase space flow of the state of a system. A model of such a system is given, based on aspects of neurobiology but readily adapted to integrated circuits. The collective properties of this model produce a content-addressable memory which correctly yields an entire memory from any subpart of sufficient size. The algorithm for the time evolution of the state of the system is based on asynchronous parallel processing. Additional emergent collective properties include some capacity for generalization, familiarity recognition, categorization, error correction, and time sequence retention. The collective properties are only weakly sensitive to details of the modeling or the failure of individual devices.",
+      "authors": [
+        "J J Hopfield"
+      ],
+      "published": "1982-01-15",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "optimization-by-simulated-annealing",
+      "arxiv_id": null,
+      "nips_id": null,
+      "url_abs": "https://science.sciencemag.org/content/220/4598/671",
+      "url_pdf": "https://science.sciencemag.org/content/220/4598/671",
+      "title": "Optimization by Simulated Annealing",
+      "abstract": "There is a deep and useful connection between statistical mechanics (the behavior of systems with many degrees of freedom in thermal equilibrium at a finite temperature) and multivariate or combinatorial optimization (finding the minimum of a given function depending on many parameters). A detailed analogy with annealing in solids provides a framework for optimization of the properties of very large and complex systems. This connection to statistical mechanics exposes new information and provides an unfamiliar perspective on traditional optimization problems and methods.",
+      "authors": [
+        "S. Kirkpatrick",
+        "C. D. Gelatt",
+        "M. P. Vecchi"
+      ],
+      "published": "1983-05-13",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "learning-internal-representations-by-error",
+      "arxiv_id": null,
+      "nips_id": null,
+      "url_abs": "https://app.dimensions.ai/details/publication/pub.1091744995",
+      "url_pdf": "https://apps.dtic.mil/dtic/tr/fulltext/u2/a164453.pdf",
+      "title": "Learning Internal Representations by Error Propagation",
+      "abstract": "This paper presents a generalization of the perceptron learning procedure for learning the correct sets of connections for arbitrary networks. The rule, called the generalized delta rule, is a simple scheme for implementing a gradient descent method for finding weights that minimize the sum squared error of the system's performance. The major theoretical contribution of the work is the procedure called error propagation, whereby the gradient can be determined by individual units of the network based only on locally available information. The major empirical contribution of the work is to show that the problem of local minima is not serious in this application of gradient descent.",
+      "authors": [
+        "David E. Rumelhart",
+        "Geoffrey E. Hinton",
+        "Ronald J. Williams"
+      ],
+      "published": "1986-02-20",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "theory-and-practice",
+      "arxiv_id": "cs/9301114",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/cs/9301114v1",
+      "url_pdf": "https://arxiv.org/pdf/cs/9301114v1.pdf",
+      "title": "Theory and practice",
+      "abstract": "The author argues to Silicon Valley that the most important and powerful part of computer science is work that is simultaneously theoretical and practical. He particularly considers the intersection of the theory of algorithms and practical software development. He combines examples from the development of the TeX typesetting system with clever jokes, criticisms, and encouragements.",
+      "authors": [
+        "Donald E. Knuth"
+      ],
+      "published": "1991-11-01",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "radiation-transfer-in-gamma-ray-bursts",
+      "arxiv_id": "astro-ph/9204005",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/astro-ph/9204005v1",
+      "url_pdf": "https://arxiv.org/pdf/astro-ph/9204005v1.pdf",
+      "title": "Radiation Transfer in Gamma-Ray Bursts",
+      "abstract": "We have calculated gamma-ray radiative transport in regions of high energy density, such as gamma-ray burst source regions, using a discrete ordinate, discrete energy group method. The calculations include two-photon pair production and annihilation, as well as three-photon pair annihilation. The radiation field itself acts as an absorbing medium, and the optical depth depends on its intensity, so the problem is intrinsically nonlinear. Spherical divergence produces effective collimation of the flux. At high optical depth the high energy ($E > 1$ MeV) portion of the emergent spectrum assumes a nearly universal form. An approximate limit is derived for the high energy flux from a gamma-ray burst source region of given size, and the implications of this limit for the distance to the March 5, 1979 event are briefly discussed. We discuss more generally the problem of very luminous bursts, and implications of Galactic halo distances for flare models.",
+      "authors": [
+        "B. J. Carrigan",
+        "J. I. Katz"
+      ],
+      "published": "1992-04-30",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "connectionist-learning-of-belief-networks",
+      "arxiv_id": null,
+      "nips_id": null,
+      "url_abs": "https://www.semanticscholar.org/paper/Connectionist-Learning-of-Belief-Networks-Neal/a120c05ad7cd4ce2eb8fb9697e16c7c4877208a5",
+      "url_pdf": "http://www.cs.toronto.edu/~bonner/courses/2016s/csc321/readings/Connectionist%20learning%20of%20belief%20networks.pdf",
+      "title": "Connectionist Learning of Belief Networks",
+      "abstract": "Connectionist learning procedures are presented for \"sigmoid\" and \"noisy-OR\" varieties\r\nof probabilistic belief networks. These networks have previously been seen primarily as a\r\nmeans of representing knowledge derived from experts. Here it is shown that the \"Gibbs\r\nsampling\" simulation procedure for such networks can support maximum-likelihood\r\nlearning from empirical data through local gradient ascent. This learning procedure\r\nresembles that used for \"Boltzmann machines\", and like it, allows the use of \"hidden\"\r\nvariables to model correlations between visible variables. Due to the directed nature\r\nof the connections in a belief network, however, the \"negative phase\" of Boltzmann\r\nmachine learning is unnecessary. Experimental results show that, as a result, learning in\r\na sigmoid belief network can be faster than in a Boltzmann machine. These networks\r\nhave other advantages over Boltzmann machines in pattern classification and decision\r\nmaking applications, are naturally applicable to unsupervised learning problems, and\r\nprovide a link between work on connectionist learning and work on the representation\r\nof expert knowledge.",
+      "authors": [
+        "Radford M. Neal"
+      ],
+      "published": "1992-06-01",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "debye-screening-and-baryogenesis-during-the",
+      "arxiv_id": "hep-ph/9206214",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/hep-ph/9206214v1",
+      "url_pdf": "https://arxiv.org/pdf/hep-ph/9206214v1.pdf",
+      "title": "Debye Screening and Baryogenesis during the Electroweak Phase Transition",
+      "abstract": "We examine a recent claim that Debye screening will affect the charge transport mechanism of anomalous electroweak baryogenesis. We show that the effects of gauge charge screening do not affect the baryon number produced during a first order electroweak phase transition. (Requires harvmac.tex)",
+      "authors": [
+        "A. G. Cohen",
+        "D. B. Kaplan",
+        "A. E. Nelson"
+      ],
+      "published": "1992-06-10",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "collider-discovery-limits-for-supersymmetric",
+      "arxiv_id": "hep-ph/9207212",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/hep-ph/9207212v1",
+      "url_pdf": "https://arxiv.org/pdf/hep-ph/9207212v1.pdf",
+      "title": "Collider discovery limits for supersymmetric Higgs bosons",
+      "abstract": "The prospects for discovery of the five Higgs bosons of the minimal supersymmetric standard model are assessed for existing and planned future colliders, including LEP\\,I, LEP\\,II, LHC and SSC. As a benchmark for comparisons, we take a top-quark mass $m_t= 150\\,$GeV and squark mass parameter $\\tilde m= 1\\,$TeV in evaluating one-loop radiative corrections; some results for other $m_t$ values are also given. Searches based on the most promising production and decay channels are taken into account. For large regions in parameter space, detectable signals are predicted for one or more of the Higgs bosons, but there remains a region for which no signals would be visible at the above colliders.",
+      "authors": [
+        "V. Barger",
+        "Kingman Cheung",
+        "R. J. N. Phillips",
+        "A. L. Stange"
+      ],
+      "published": "1992-07-03",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "the-neutralino-relic-density-in-minimal-n1",
+      "arxiv_id": "hep-ph/9207234",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/hep-ph/9207234v1",
+      "url_pdf": "https://arxiv.org/pdf/hep-ph/9207234v1.pdf",
+      "title": "The Neutralino Relic Density in Minimal N=1 Supergravity",
+      "abstract": "We compute the cosmic relic (dark matter) density of the lightest supersymmetric particle (LSP) in the framework of minimal $N=1$ Supergravity models with radiative breaking of the electroweak gauge symmetry. To this end, we re--calculate the cross sections for all possible annihilation processes for a general, mixed neutralino state with arbitrary mass. Our analysis includes effects of all Yukawa couplings of third generation fermions, and allows for a fairly general set of soft SUSY breaking parameters at the Planck scale. We find that a cosmologically interesting relic density emerges naturally over wide regions of parameter space. However, the requirement that relic neutralinos do not overclose the universe does not lead to upper bounds on SUSY breaking parameters that are strictly valid for all combinations of parameters and of interest for existing or planned collider experiments; in particular, gluino and squark masses in excess of 5 TeV cannot strictly be excluded. On the other hand, in the ``generic'' case of a gaugino--like neutralino whose annihilation cross sections are not ``accidentally'' enhanced by a nearby Higgs or $Z$ pole, all sparticles should lie within the reach of the proposed $pp$ and $e^+e^-$ supercolliders. We also find that requiring the LSP to provide all dark matter predicted by inflationary models imposes a strict lower bound of 40 GeV on the common scalar mass $m$ at the Planck scale, while the lightest sleptons would have to be heavier",
+      "authors": [
+        "M. Drees",
+        "M. M. Nojiri"
+      ],
+      "published": "1992-07-10",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "transport-properties-and-fluctuations-in-type",
+      "arxiv_id": "cond-mat/9207017",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/cond-mat/9207017v1",
+      "url_pdf": "https://arxiv.org/pdf/cond-mat/9207017v1.pdf",
+      "title": "Transport Properties and Fluctuations in Type II Superconductors Near $H_{c2}$",
+      "abstract": "We study the flux-flow Hall effect and thermomagnetic transport near the upper critical field \\hctwo\\ in extreme type-II superconductors starting from a suitable generalization of the time dependent Ginzburg-Landau equations. We explicitly incorporate the effects of backflow into the calculations of the local electric field and current, leading to a current which is properly divergenceless. The Hall conductivity calculated from this current agrees with other mean-field calculations which assume a uniform applied electric field (the Schmid-Caroli-Maki solution), thereby vindicating these simplified treatments. We then use these results to calculate the transverse thermomagnetic effects (the Ettingshausen and Nernst effects). The effects of thermal fluctuations and nonlocal elasticity of the flux lattice are incorporated using a method recently developed by Vecris and Pelcovits [G. Vecris and R. A. Pelcovits, Phys. Rev. B {\\bf 44}, 2767 (1991)]. Our results, taken together with those of Vecris and Pelcovits, provide a rather complete description of the transport properties of the flux lattice state near \\hctwo, at least within the framework of time dependent Ginzburg-Landau theory.",
+      "authors": [
+        "Robert J. Troy",
+        "Alan T. Dorsey"
+      ],
+      "published": "1992-07-15",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "morphology-of-amorphous-layers-ballistically",
+      "arxiv_id": "cond-mat/9207014",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/cond-mat/9207014v1",
+      "url_pdf": "https://arxiv.org/pdf/cond-mat/9207014v1.pdf",
+      "title": "Morphology of Amorphous Layers Ballistically Deposited on a Planar Substrate",
+      "abstract": "We report numerical simulation of the deposition of spherical particles on a planar surface, by ballistic, straight-line trajectory transport, and assuming irreversible adhesion on contact with the surface or previously deposited particles. Our data indicate that the deposit formed has a loosely layered structure within few diameters from the surface. This structure can be explained by a model of growth via chain formation. Away from the surface we found evidence of a monotonic, power-law approach to the bulk density. Both density and contact-statistics results suggest that the deposit formed is sparse: the space-filling fraction is about 15%, and the average number of contacts is 2. The morphology of the deposit both near the surface and in the bulk seems to be a result of competition of screening and branching; nearly half of all the spheres are either single-contact dangling ends, or branching nodes with more than two contacts.",
+      "authors": [
+        "B. D. Lubachevsky",
+        "V. Privman",
+        "S. C. Roy"
+      ],
+      "published": "1992-07-15",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "vortex-motion-and-the-hall-effect-in-type-ii",
+      "arxiv_id": "cond-mat/9207018",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/cond-mat/9207018v1",
+      "url_pdf": "https://arxiv.org/pdf/cond-mat/9207018v1.pdf",
+      "title": "Vortex motion and the Hall effect in type II superconductors: a time dependent Ginzburg-Landau theory approach",
+      "abstract": "Vortex motion in type II superconductors is studied starting from a variant of the time dependent Ginzburg-Landau equations, in which the order parameter relaxation time is taken to be complex. Using a method due to Gor'kov and Kopnin, we derive an equation of motion for a single vortex ($B\\ll H_{c2}$) in the presence of an applied transport current. The imaginary part of the relaxation time and the normal state Hall effect both break ``particle-hole symmetry,'' and produce a component of the vortex velocity parallel to the transport current, and consequently a Hall field due to the vortex motion. Various models for the relaxation time are considered, allowing for a comparison to some phenomenological models of vortex motion in superconductors, such as the Bardeen-Stephen and Nozi\\`eres-Vinen models, as well as to models of vortex motion in neutral superfluids. In addition, the transport energy, Nernst effect, and thermopower are calculated for a single vortex. Vortex bending and fluctuations can also be included within this description, resulting in a Langevin equation description of the vortex motion. The Langevin equation is used to discuss the propagation of helicon waves and the diffusional motion of a vortex line. The results are discussed in light of the rather puzzling sign change of the Hall effect which has been observed in the mixed state of the high temperature superconductors.",
+      "authors": [
+        "Alan T. Dorsey"
+      ],
+      "published": "1992-07-15",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "zero-frequency-current-noise-for-the-double",
+      "arxiv_id": "cond-mat/9207024",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/cond-mat/9207024v1",
+      "url_pdf": "https://arxiv.org/pdf/cond-mat/9207024v1.pdf",
+      "title": "Zero Frequency Current Noise for the Double Tunnel Junction Coulomb Blockade",
+      "abstract": "We compute the zero frequency current noise numerically and in several limits analytically for the coulomb blockade problem consisting of two tunnel junctions connected in series. At low temperatures over a wide range of voltages, capacitances, and resistances it is shown that the noise measures the variance in the number of electrons in the region between the two tunnel junctions. The average current, on the other hand, only measures the mean number of electrons. Thus, the noise provides additional information about transport in these devices which is not available from measuring the current alone.",
+      "authors": [
+        "Selman Hershfield",
+        "John H. Davies",
+        "Per Hyldgaard",
+        "Christopher J. Stanton",
+        "John W. Wilkins"
+      ],
+      "published": "1992-07-20",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "new-higgs-signatures-in-supersymmetry-with",
+      "arxiv_id": "hep-ph/9207269",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/hep-ph/9207269v1",
+      "url_pdf": "https://arxiv.org/pdf/hep-ph/9207269v1.pdf",
+      "title": "New Higgs Signatures in Supersymmetry with Spontraneously Broken R Parity\"",
+      "abstract": "Higgs production from $Z$ decay in supersymmetry with spontaneous broken R parity proceeds mostly by the Bjorken process as in the standard model. However, the corresponding production rates can be weaker than in the standard model (SM), especially in the low mass region. This will substantially weaken the Higgs boson mass limits derived from LEP1. More strikingly, the main Higgs decay channel is \"invisible\", over most of the mass range accessible to LEP1, leading to events with large missing energy carried by majorons. This possibility should be taken into account in the planning of Higgs boson search strategies not only at LEP but also at high energy supercolliders.",
+      "authors": [
+        "J Romao",
+        "F de Campos",
+        "J W F Valle"
+      ],
+      "published": "1992-07-29",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "transport-properties-of-the-infinite",
+      "arxiv_id": "cond-mat/9208002",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/cond-mat/9208002v1",
+      "url_pdf": "https://arxiv.org/pdf/cond-mat/9208002v1.pdf",
+      "title": "Transport Properties of the Infinite Dimensional Hubbard Model",
+      "abstract": "Results for the optical conductivity and resistivity of the Hubbard model in infinite spatial dimensions are presented. At half filling we observe a gradual crossover from a normal Fermi-liquid with a Drude peak at $\\omega=0$ in the optical conductivity to an insulator as a function of $U$ for temperatures above the antiferromagnetic phase transition. When doped, the ``insulator'' becomes a Fermi-liquid with a corresponding temperature dependence of the optical conductivity and resistivity. We find a $T^2$-coefficient in the low temperature resistivity which suggests that the carriers in the system acquire a considerable mass-enhancement due to the strong local correlations. At high temperatures, a crossover into a semi-metallic regime takes place.",
+      "authors": [
+        "Th. Pruschke",
+        "D. L. Cox",
+        "M. Jarrell"
+      ],
+      "published": "1992-08-05",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "observing-binary-inspiral-in-gravitational",
+      "arxiv_id": "gr-qc/9301003",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/gr-qc/9301003v1",
+      "url_pdf": "https://arxiv.org/pdf/gr-qc/9301003v1.pdf",
+      "title": "Observing binary inspiral in gravitational radiation: One interferometer",
+      "abstract": "We investigate the sensitivity of individual LIGO/VIRGO-like interferometers and the precision with which they can determine the characteristics of an inspiralling binary system. Since the two interferometers of the LIGO detector share nearly the same orientation, their joint sensitivity is similar to that of a single, more sensitive interferometer. We express our results for a single interferometer of both initial and advanced LIGO design, and also for the LIGO detector in the limit that its two interferometers share exactly the same orientation. We approximate the evolution of a binary system as driven exclusively by leading order quadrupole gravitational radiation. To assess the sensitivity, we calculate the rate at which sources are expected to be observed, the range to which they are observable, and the precision with which characteristic quantities describing the observed binary system can be determined. Assuming a conservative rate density for coalescing neutron star binary systems we expect that the advanced LIGO detector will observe approximately 69~yr${}^{-1}$ with an amplitude SNR greater than 8. Of these, approximately 7~yr${}^{-1}$ will be from binaries at distances greater than 950~Mpc. We explore the sensitivity of these results to a tunable parameter in the interferometer design (the recycling frequency). The optimum choice of the parameter is dependent on the goal of the observations, e.g., maximizing the rate of detections or maximizing the precision of measurement. We determine the optimum parameter values for these two cases.",
+      "authors": [
+        "Lee Samuel Finn",
+        "David F. Chernoff"
+      ],
+      "published": "1993-01-06",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "power-spectrum-analysis-of-three-dimensional",
+      "arxiv_id": "astro-ph/9304022",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/astro-ph/9304022v1",
+      "url_pdf": "https://arxiv.org/pdf/astro-ph/9304022v1.pdf",
+      "title": "Power Spectrum Analysis of Three-Dimensional Redshift Surveys",
+      "abstract": "We develop a general method for power spectrum analysis of three dimensional redshift surveys. We present rigorous analytical estimates for the statistical uncertainty in the power and we are able to derive a rigorous optimal weighting scheme under the reasonable (and largely empirically verified) assumption that the long wavelength Fourier components are Gaussian distributed. We apply the formalism to the updated 1-in-6 QDOT IRAS redshift survey, and compare our results to data from other probes: APM angular correlations; the CfA and the Berkeley 1.2Jy IRAS redshift surveys. Our results bear out and further quantify the impression from e.g.\\ counts-in-cells analysis that there is extra power on large scales as compared to the standard CDM model with $\\Omega h\\simeq 0.5$. We apply likelihood analysis using the CDM spectrum with $\\Omega h$ as a free parameter as a phenomenological family of models; we find the best fitting parameters in redshift space and transform the results to real space. Finally, we calculate the distribution of the estimated long wavelength power. This agrees remarkably well with the exponential distribution expected for Gaussian fluctuations, even out to powers of ten times the mean. Our results thus reveal no trace of periodicity or other non-Gaussian behavior.",
+      "authors": [
+        "Hume A. Feldman",
+        "Nick Kaiser",
+        "John A. Peacock"
+      ],
+      "published": "1993-04-26",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "black-hole-information",
+      "arxiv_id": "hep-th/9305040",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/hep-th/9305040v5",
+      "url_pdf": "https://arxiv.org/pdf/hep-th/9305040v5.pdf",
+      "title": "Black Hole Information",
+      "abstract": "Hawking's 1974 calculation of thermal emission from a classical black hole led to his 1976 proposal that information may be lost from our universe as a pure quantum state collapses gravitationally into a black hole, which then evaporates completely into a mixed state of thermal radiation. Another possibility is that the information is not lost, but is stored in a remnant of the evaporating black hole. A third idea is that the information comes out in nonthermal correlations within the Hawking radiation, which would be expected to occur at too slow a rate, or be too spread out, to be revealed by any nonperturbative calculation.",
+      "authors": [
+        "Don N. Page"
+      ],
+      "published": "1993-05-10",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "thermal-phenomenology-of-hadrons-from-200",
+      "arxiv_id": "nucl-th/9307020",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/nucl-th/9307020v1",
+      "url_pdf": "https://arxiv.org/pdf/nucl-th/9307020v1.pdf",
+      "title": "Thermal phenomenology of hadrons from 200 AGeV S+S collisions",
+      "abstract": "We develop a complete and consistent description for the hadron spectra from heavy ion collisions in terms of a few collective variables, in particular temperature, longitudinal and transverse flow. To achieve a meaningful comparison with presently available data, we also include the resonance decays into our picture. To disentangle the influences of transverse flow and resonance decays in the $m_T$-spectra, we analyse in detail the shape of the $m_T$-spectra.",
+      "authors": [
+        "Ekkard Schnedermann",
+        "Josef Sollfrank",
+        "Ulrich Heinz"
+      ],
+      "published": "1993-07-20",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "on-the-shape-of-the-light-profiles-of-early",
+      "arxiv_id": "astro-ph/9309013",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/astro-ph/9309013v1",
+      "url_pdf": "https://arxiv.org/pdf/astro-ph/9309013v1.pdf",
+      "title": "On the shape of the light profiles of early-type galaxies",
+      "abstract": "We have obtained the best fit to the light profiles of a luminosity limited sample of elliptical and S0 galaxies with a power law \\rn, letting the exponent remain free rather than keeping it fixed at $1/n=1/4$ as in the well known \\GV formula. The introduction of a free parameter in the fitting formula (ranging from $n=0.5$ for $<\\re>=0.3$ kpc to $n=16$ for $<\\re>=25$ kpc) is justified by the existence of a good correlation between $n$ and the global galaxian parameters, such as total luminosity and scale-radius. This result seems to be in line with the segregation of properties between the `ordinary' and `bright' families of early-type galaxies, and has consequence for the claimed independence of the shape of galaxy profiles with respect to the Fundamental Plane parameters.",
+      "authors": [
+        "N. Caon",
+        "M. Capaccioli",
+        "M. D'Onofrio"
+      ],
+      "published": "1993-09-10",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "iteration-of-meromorphic-functions",
+      "arxiv_id": "math/9310226",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/math/9310226v1",
+      "url_pdf": "https://arxiv.org/pdf/math/9310226v1.pdf",
+      "title": "Iteration of meromorphic functions",
+      "abstract": "This paper attempts to describe some of the results obtained in the iteration theory of transcendental meromorphic functions, not excluding the case of entire functions. The reader is not expected to be familiar with the iteration theory of rational functions. On the other hand, some aspects where the transcendental case is analogous to the rational case are treated rather briefly here. For example, we introduce the different types of components of the Fatou set that occur in the iteration of rational functions but omit a detailed description of these types. Instead, we concentrate on the types of components that are special to transcendental functions (Baker domains and wandering domains).",
+      "authors": [
+        "Walter Bergweiler"
+      ],
+      "published": "1993-10-01",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "the-bogdanov-map-bifurcations-mode-locking",
+      "arxiv_id": "chao-dyn/9402006",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/chao-dyn/9402006v3",
+      "url_pdf": "https://arxiv.org/pdf/chao-dyn/9402006v3.pdf",
+      "title": "The Bogdanov Map: Bifurcations, Mode Locking, and Chaos in a Dissipative System",
+      "abstract": "We investigate the bifurcations and basins of attraction in the Bogdanov map, a planar quadratic map which is conjugate to the H\\'enon area-preserving map in its conservative limit. It undergoes a Hopf bifurcation as dissipation is added, and exhibits the panoply of mode locking, Arnold tongues, and chaos as an invariant circle grows out, finally to be destroyed in the homoclinic tangency of the manifolds of a remote saddle point. The Bogdanov map is the Euler map of a two-dimensional system of ordinary differential equations first considered by Bogdanov and Arnold in their study of the versal unfolding of the double-zero-eigenvalue singularity, and equivalently of a vector field invariant under rotation of the plane by an angle $2\\pi$. It is a useful system in which to observe the effect of dissipative perturbations on Hamiltonian structure. In addition, we argue that the Bogdanov map provides a good approximation to the dynamics of the Poincar\\'e maps of periodically forced oscillators.",
+      "authors": [
+        "David K. Arrowsmith",
+        "Julyan H. E. Cartwright",
+        "Alexis N. Lansbury",
+        "Colin M. Place"
+      ],
+      "published": "1994-02-22",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "on-proof-and-progress-in-mathematics",
+      "arxiv_id": "math/9404236",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/math/9404236v1",
+      "url_pdf": "https://arxiv.org/pdf/math/9404236v1.pdf",
+      "title": "On proof and progress in mathematics",
+      "abstract": "In response to Jaffe and Quinn [math.HO/9307227], the author discusses forms of progress in mathematics that are not captured by formal proofs of theorems, especially in his own work in the theory of foliations and geometrization of 3-manifolds and dynamical systems.",
+      "authors": [
+        "William P. Thurston"
+      ],
+      "published": "1994-04-01",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "the-fate-of-black-hole-singularities-and-the",
+      "arxiv_id": "gr-qc/9404011",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/gr-qc/9404011v1",
+      "url_pdf": "https://arxiv.org/pdf/gr-qc/9404011v1.pdf",
+      "title": "The fate of black hole singularities and the parameters of the standard models of particle physics and cosmology",
+      "abstract": "A cosmological scenario which explains the values of the parameters of the standard models of elementary particle physics and cosmology is discussed. In this scenario these parameters are set by a process analogous to natural selection which follows naturally from the assumption that the singularities in black holes are removed by quantum effects leading to the creation of new expanding regions of the universe. The suggestion of J. A. Wheeler that the parameters change randomly at such events leads naturally to the conjecture that the parameters have been selected for values that extremize the production of black holes. This leads directly to a prediction, which is that small changes in any of the parameters should lead to a decrease in the number of black holes produced by the universe. On plausible astrophysical assumptions it is found that changes in many of the parameters do lead to a decrease in the number of black holes produced by spiral galaxies. These include the masses of the proton,neutron, electron and neutrino and the weak, strong and electromagnetic coupling constants. Finally,this scenario predicts a natural time scale for cosmology equal to the time over which spiral galaxies maintain appreciable rates of star formation, which is compatible with current observations that $\\Omega = .1-.2$.",
+      "authors": [
+        "Lee Smolin"
+      ],
+      "published": "1994-04-07",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "building-a-scalable-and-interpretable",
+      "arxiv_id": null,
+      "nips_id": null,
+      "url_abs": "https://ieeexplore.ieee.org/abstract/document/9386067",
+      "url_pdf": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9386067",
+      "title": "Building a Scalable and Interpretable Bayesian Deep Learning Framework for Quality Control of Free Form Surfaces",
+      "abstract": "Deep learning has demonstrated high accuracy for 3D object shape error modeling necessary to estimate dimensional and geometric quality defects in multi-station assembly systems (MAS). Increasingly, deep learning-driven Root Cause Analysis (RCA) is used for decision-making when planning corrective action of quality defects. However, given the current absence of scalability enabling models, training deep learning models for each individual MAS is exceedingly time-consuming as it requires large amounts of labelled data and multiple computational cycles. Additionally, understanding and interpreting how deep learning produces final predictions while quantifying various uncertainties also remains a fundamental challenge. In an effort to address these gaps, a novel closed-loop in-process (CLIP) diagnostic framework underpinned algorithm portfolio is proposed which simultaneously enhances scalability and interpretability of the current Bayesian deep learning approach, Object Shape Error Response (OSER), to isolate root cause(s) of quality defects in MAS. The OSER-MAS leverages a Bayesian 3D U-Net architecture integrated with Computer-Aided Engineering simulations to estimate root causes. The CLIP diagnostic framework shortens OSER-MAS model training time by developing: (i) closed-loop training to enable faster convergence for a single MAS by leveraging uncertainty estimates of the Bayesian 3D U-net model; and, (ii) transfer/continual learning-based scalability model to transmit meta-knowledge from the trained model to a new MAS resulting in convergence using comparatively less training samples. Additionally, CLIP increases the transparency for quality-related root cause predictions by developing interpretability model which is based on 3D Gradient-based Class Activation Maps (3D Grad-CAMs) and entails: (a) linking elements of MAS model with functional elements of the U-Net architecture; and, (b) relating features extracted by the architecture with elements of the MAS model and further with the object shape error patterns for root cause(s) that occur in MAS. Benchmarking studies are conducted using six automotive-MAS with varying complexities. Results highlight a reduction in training samples of up to 56% with a loss in performance of up to 2.1%.",
+      "authors": [
+        "Sumit Sinha",
+        "Pasquale Franciosa",
+        "Dariusz Ceglarek"
+      ],
+      "published": "1994-04-07",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "weight-optimization-in-multichannel-monte",
+      "arxiv_id": "hep-ph/9405257",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/hep-ph/9405257v2",
+      "url_pdf": "https://arxiv.org/pdf/hep-ph/9405257v2.pdf",
+      "title": "Weight optimization in multichannel Monte Carlo",
+      "abstract": "We discuss the improvement in the accuracy of a Monte Carlo integration that can be obtained by optimization of the `a-priori weights' of the various channels. These channels may be either the strata in a stratified-sampling approach, or the several `approximate' distributions such as are used in event generators for particle phenomenology. The optimization algorithm does not require any initialization, and each Monte Carlo integration point can be used in the evaluation of the integral. We describe our experience with this method in a realistic problem, where an effective increase in program speed by almost an order of magnitude is observed.",
+      "authors": [
+        "R. Kleiss",
+        "R. Pittau"
+      ],
+      "published": "1994-05-10",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "a-system-for-induction-of-oblique-decision",
+      "arxiv_id": "cs/9408103",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/cs/9408103v1",
+      "url_pdf": "https://arxiv.org/pdf/cs/9408103v1.pdf",
+      "title": "A System for Induction of Oblique Decision Trees",
+      "abstract": "This article describes a new system for induction of oblique decision trees. This system, OC1, combines deterministic hill-climbing with two forms of randomization to find a good oblique split (in the form of a hyperplane) at each node of a decision tree. Oblique decision tree methods are tuned especially for domains in which the attributes are numeric, although they can be adapted to symbolic or mixed symbolic/numeric attributes. We present extensive empirical studies, using both real and artificial data, that analyze OC1's ability to construct oblique trees that are smaller and more accurate than their axis-parallel counterparts. We also examine the benefits of randomization for the construction of oblique decision trees.",
+      "authors": [
+        "S. K. Murthy",
+        "S. Kasif",
+        "S. Salzberg"
+      ],
+      "published": "1994-08-01",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "steps-towards-nonlinear-cluster-inversion",
+      "arxiv_id": "astro-ph/9408050",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/astro-ph/9408050v1",
+      "url_pdf": "https://arxiv.org/pdf/astro-ph/9408050v1.pdf",
+      "title": "Steps towards Nonlinear Cluster Inversion Through Gravitational Distortions. II. Generalization of the Kaiser & Squires Method",
+      "abstract": "The weak distortions of high-redshift galaxies caused by gravitational light deflection near clusters of galaxies can be used to reconstruct the projected (two-dimensional) surface mass density of intermediate redshift clusters. This technique, pioneered by Tyson, Valdes & Wenk, and Kaiser & Squires, is reconsidered in the present paper, where we generalize the inversion equation found by Kaiser & Squires (KS) in several respect. Adopting a different smoothing procedure for the discreetly sampled data (individual galaxy images), we effectively reduce the shot noise in the KS procedure. In particular we show that the best density reconstructions are obtained if the smoothing scale is adopted to the `strength of the signal', which yields a better resolution near the center of the cluster where the distortions are strongest. Furthermore, we point out the importance of boundary effects and demonstrate their disastrous impact on rectangular data fields (CCDs) with large side ratio. Most important, however, is the generalization of the KS method to critical clusters, i.e., to such clusters which are capable of producing multiple images and giant luminous arcs. The corresponding modifications of the inversion procedure are severe; in particular, the resulting inversion equation is much more difficult to solve. As we pointed out in a previous paper (Schneider & Seitz), there exists a local degeneracy if the cluster is critical. We have developed an iteration procedure to solve the inversion equation, which we demonstrate to yield a very accurate",
+      "authors": [
+        "Carolin Seitz",
+        "Peter Schneider"
+      ],
+      "published": "1994-08-16",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "on-the-consistent-histories-approach-to",
+      "arxiv_id": "gr-qc/9412067",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/gr-qc/9412067v2",
+      "url_pdf": "https://arxiv.org/pdf/gr-qc/9412067v2.pdf",
+      "title": "On the Consistent Histories Approach to Quantum Mechanics",
+      "abstract": "We review the consistent histories formulations of quantum mechanics developed by Griffiths, Omn\\`es and Gell-Mann and Hartle, and describe the classification of consistent sets. We illustrate some general features of consistent sets by a few simple lemmas and examples. We consider various interpretations of the formalism, and examine the new problems which arise in reconstructing the past and predicting the future. It is shown that Omn\\`es' characterisation of true statements --- statements which can be deduced unconditionally in his interpretation --- is incorrect. We examine critically Gell-Mann and Hartle's interpretation of the formalism, and in particular their discussions of communication, prediction and retrodiction, and conclude that their explanation of the apparent persistence of quasiclassicality relies on assumptions about an as yet unknown theory of experience. Our overall conclusion is that the consistent histories approach illustrates the need to supplement quantum mechanics by some selection principle in order to produce a fundamental theory capable of unconditional predictions.",
+      "authors": [
+        "Fay Dowker",
+        "Adrian Kent"
+      ],
+      "published": "1994-12-22",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "solving-multiclass-learning-problems-via",
+      "arxiv_id": "cs/9501101",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/cs/9501101v1",
+      "url_pdf": "https://arxiv.org/pdf/cs/9501101v1.pdf",
+      "title": "Solving Multiclass Learning Problems via Error-Correcting Output Codes",
+      "abstract": "Multiclass learning problems involve finding a definition for an unknown function f(x) whose range is a discrete set containing k &gt 2 values (i.e., k ``classes''). The definition is acquired by studying collections of training examples of the form [x_i, f (x_i)]. Existing approaches to multiclass learning problems include direct application of multiclass algorithms such as the decision-tree algorithms C4.5 and CART, application of binary concept learning algorithms to learn individual binary functions for each of the k classes, and application of binary concept learning algorithms with distributed output representations. This paper compares these three approaches to a new technique in which error-correcting codes are employed as a distributed output representation. We show that these output representations improve the generalization performance of both C4.5 and backpropagation on a wide range of multiclass learning tasks. We also demonstrate that this approach is robust with respect to changes in the size of the training sample, the assignment of distributed representations to particular classes, and the application of overfitting avoidance techniques such as decision-tree pruning. Finally, we show that---like the other methods---the error-correcting code technique can provide reliable class probability estimates. Taken together, these results demonstrate that error-correcting output codes provide a general-purpose method for improving the performance of inductive learning programs on multiclass problems.",
+      "authors": [
+        "T. G. Dietterich",
+        "G. Bakiri"
+      ],
+      "published": "1995-01-01",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "a-shifted-multiplicative-model-fusion-method",
+      "arxiv_id": null,
+      "nips_id": null,
+      "url_abs": "https://acsess.onlinelibrary.wiley.com/doi/abs/10.2135/cropsci1995.0011183X003500010010x",
+      "url_pdf": "https://acsess.onlinelibrary.wiley.com/doi/epdf/10.2135/cropsci1995.0011183X003500010010x",
+      "title": "A shifted multiplicative model fusion method for grouping environments without cultivar rank change.",
+      "abstract": "Genotype × environment interactions of most concern to plant breeders involve cultivar rank change across environments, i.e., crossover interaction (COl). When COls are present, cluster strategies can be used to group environments without significant changes in cultivar ranks. Several methods for classifying environments without COI have recently been proposed. In this study, the shifted multiplicative model (SHMM) fusion method based on a building block principle is used for grouping environments which rank cultivars similarly. The SHMM fusion selects the best action by computing for each new cluster formed, a new set of distance measures with the other clusters and with the unclustered individuals. Experimental data were collected on 55 cultivars evaluated under five irrigation levels in each of two trials (I0 environments). Groups of environments obtained with SHMM fusion were compared with those obtained using cluster analysis based on Euclidean distances computed from unstandardized and standardized data. The SHMM fusion formed four final clusters of environments. The final clusters grouped environments with similar irrigation levels. Conventional cluster analysis based on Euclidean distances produced final clusters with much larger percentage of COls than SHMM fusion. Results show that SHMM fusion is a useful strategy for classifying environments without cultivar rank change.",
+      "authors": [
+        "José Crossa  Paul L. Cornelius  Ken Sayre  R.J. Iván Ortiz‐Monasterio"
+      ],
+      "published": "1995-01-01",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "hijing-1-0-a-monte-carlo-program-for-parton",
+      "arxiv_id": "nucl-th/9502021",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/nucl-th/9502021v1",
+      "url_pdf": "https://arxiv.org/pdf/nucl-th/9502021v1.pdf",
+      "title": "HIJING 1.0: A Monte Carlo Program for Parton and Particle Production in High Energy Hadronic and Nuclear Collisions",
+      "abstract": "Based on QCD-inspired models for multiple jets production, we developed a Monte Carlo program to study jet and the associated particle production in high energy $pp$, $pA$ and $AA$ collisions. The physics behind the program which includes multiple minijet production, soft excitation, nuclear shadowing of parton distribution functions and jet interaction in dense matter is briefly discussed. A detailed description of the program and instructions on how to use it are given.",
+      "authors": [
+        "Xin-Nian Wang",
+        "Miklos Gyulassy"
+      ],
+      "published": "1995-02-08",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "microcanonical-treatment-of-hadronizing-the",
+      "arxiv_id": "nucl-th/9503021",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/nucl-th/9503021v1",
+      "url_pdf": "https://arxiv.org/pdf/nucl-th/9503021v1.pdf",
+      "title": "Microcanonical Treatment of Hadronizing the Quark-Gluon Plasma",
+      "abstract": "We recently introduced a completely new way to study ultrarelativistic nuclear scattering by providing a link between the string model approach and a statistical description. A key issue is the microcanonical treatment of hadronizing individual quark matter droplets. In this paper we describe in detail the hadronization of these droplets according to n-body phase space, by using methods of statistical physics, i.e. constructing Markov chains of hadron configurations.",
+      "authors": [
+        "Klaus WERNER",
+        "Joerg AICHELIN"
+      ],
+      "published": "1995-03-23",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "higgs-boson-production-at-the-lhc",
+      "arxiv_id": "hep-ph/9504378",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/hep-ph/9504378v1",
+      "url_pdf": "https://arxiv.org/pdf/hep-ph/9504378v1.pdf",
+      "title": "HIGGS BOSON PRODUCTION AT THE LHC",
+      "abstract": "Gluon fusion is the main production mechanism for Higgs particles at the LHC. We present the QCD corrections to the fusion cross sections for the Higgs boson in the Standard Model, and for the neutral Higgs bosons in the minimal supersymmetric extension of the Standard Model. The QCD corrections are in general large and they increase the cross sections significantly. In two steps preceding the calculation of the production processes, we determine the QCD radiative corrections to Higgs decays into two photons and gluons.",
+      "authors": [
+        "M. Spira",
+        "A. Djouadi",
+        "D. Graudenz",
+        "P. M. Zerwas"
+      ],
+      "published": "1995-04-24",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "gravitational-lensing-effect-on-cosmic-1",
+      "arxiv_id": "astro-ph/9505109",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/astro-ph/9505109v2",
+      "url_pdf": "https://arxiv.org/pdf/astro-ph/9505109v2.pdf",
+      "title": "GRAVITATIONAL LENSING EFFECT ON COSMIC MICROWAVE BACKGROUND ANISOTROPIES: A POWER SPECTRUM APPROACH",
+      "abstract": "The effect of gravitational lensing on cosmic microwave background (CMB) anisotropies is investigated using the power spectrum approach. The lensing effect can be calculated in any cosmological model by specifying the evolution of gravitational potential. Previous work on this subject is generalized to a non-flat universe and to a nonlinear evolution regime. Gravitational lensing cannot change the gross distribution of CMB anisotropies, but it may redistribute the power and smooth the sharp features in the CMB power spectrum. The magnitude of this effect is estimated using observational constraints on the power spectrum of gravitational potential from galaxy and cluster surveys and also using the limits on correlated ellipticities in distant galaxies. For realistic CMB power spectra the effect on CMB multipole moments is less then a few percent on degree angular scales, but gradually increases towards smaller scales. On arcminute angular scales the acoustic oscillation peaks may be partially or completely smoothed out because of the gravitational lensing.",
+      "authors": [
+        "Uros Seljak"
+      ],
+      "published": "1995-05-23",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "the-hard-problem-a-quantum-approach",
+      "arxiv_id": "quant-ph/9505023",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/quant-ph/9505023v2",
+      "url_pdf": "https://arxiv.org/pdf/quant-ph/9505023v2.pdf",
+      "title": "The Hard Problem: A Quantum Approach",
+      "abstract": "Contents: 1. Introduction: Philosophical Setting 2. Quantum Model of the Mind/Brain 3. Person and Self 4. Meeting Baars's Criteria for Consciousness 5. Qualia 6. Free-Will",
+      "authors": [
+        "Henry P. Stapp"
+      ],
+      "published": "1995-05-30",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "corner-transfer-matrix-renormalization-group",
+      "arxiv_id": "cond-mat/9507087",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/cond-mat/9507087v5",
+      "url_pdf": "https://arxiv.org/pdf/cond-mat/9507087v5.pdf",
+      "title": "Corner Transfer Matrix Renormalization Group Method",
+      "abstract": "We propose a new fast numerical renormalization group method,the corner transfer matrix renormalization group (CTMRG) method, which is based on a unified scheme of Baxter's corner transfer matrix method and White's density matrix renormalization groupmethod. The key point is that a product of four corner transfer matrices gives the densitymatrix. We formulate the CTMRG method as a renormalization of 2D classical models.",
+      "authors": [
+        "T. Nishino",
+        "K. Okunishi"
+      ],
+      "published": "1995-07-21",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "pythia-5-7-and-jetset-7-4-physics-and-manual",
+      "arxiv_id": "hep-ph/9508391",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/hep-ph/9508391v1",
+      "url_pdf": "https://arxiv.org/pdf/hep-ph/9508391v1.pdf",
+      "title": "PYTHIA 5.7 and JETSET 7.4 Physics and Manual",
+      "abstract": "This is the latest edition of the physics description and manual of the PYTHIA and JETSET programs for event generation in High Energy Physics.",
+      "authors": [
+        "Torbjorn Sjostrand"
+      ],
+      "published": "1995-08-29",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "polynomial-time-algorithms-for-prime",
+      "arxiv_id": "quant-ph/9508027",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/quant-ph/9508027v2",
+      "url_pdf": "https://arxiv.org/pdf/quant-ph/9508027v2.pdf",
+      "title": "Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer",
+      "abstract": "A digital computer is generally believed to be an efficient universal computing device; that is, it is believed able to simulate any physical computing device with an increase in computation time of at most a polynomial factor. This may not be true when quantum mechanics is taken into consideration. This paper considers factoring integers and finding discrete logarithms, two problems which are generally thought to be hard on a classical computer and have been used as the basis of several proposed cryptosystems. Efficient randomized algorithms are given for these two problems on a hypothetical quantum computer. These algorithms take a number of steps polynomial in the input size, e.g., the number of digits of the integer to be factored.",
+      "authors": [
+        "Peter W. Shor"
+      ],
+      "published": "1995-08-30",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "svd-approach-to-data-unfolding",
+      "arxiv_id": "hep-ph/9509307",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/hep-ph/9509307v2",
+      "url_pdf": "https://arxiv.org/pdf/hep-ph/9509307v2.pdf",
+      "title": "SVD Approach to Data Unfolding",
+      "abstract": "Distributions measured in high energy physics experiments are usually distorted and/or transformed by various detector effects. A regularization method for unfolding these distributions is re-formulated in terms of the Singular Value Decomposition (SVD) of the response matrix. A relatively simple, yet quite efficient unfolding procedure is explained in detail. The concise linear algorithm results in a straightforward implementation with full error propagation, including the complete covariance matrix and its inverse. Several improvements upon widely used procedures are proposed, and recommendations are given how to simplify the task by the proper choice of the matrix. Ways of determining the optimal value of the regularization parameter are suggested and discussed, and several examples illustrating the use of the method are presented.",
+      "authors": [
+        "Andreas Hoecker",
+        "Vakhtang Kartvelishvili"
+      ],
+      "published": "1995-09-15",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "two-and-three-body-decay-modes-of-susy-higgs",
+      "arxiv_id": "hep-ph/9511342",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/hep-ph/9511342v1",
+      "url_pdf": "https://arxiv.org/pdf/hep-ph/9511342v1.pdf",
+      "title": "Two- and Three-Body Decay Modes of SUSY Higgs Particles",
+      "abstract": "We summarize the dominant decay modes of the neutral and charged Higgs bosons in the Minimal Supersymmetric extension of the Standard Model. While two--body decays are in general dominating, the branching ratios for three--body decays of the heavy scalar, pseudoscalar and charged Higgs bosons can be large below the thresholds if top quarks, $W/Z$ bosons or heavy scalar bosons are involved. Analytical expressions have been derived for the partial decay widths and the physical implications of these decay modes are discussed.",
+      "authors": [
+        "A. Djouadi",
+        "J. Kalinowski",
+        "P. M. Zerwas"
+      ],
+      "published": "1995-11-16",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "quantum-networks-for-elementary-arithmetic",
+      "arxiv_id": "quant-ph/9511018",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/quant-ph/9511018v1",
+      "url_pdf": "https://arxiv.org/pdf/quant-ph/9511018v1.pdf",
+      "title": "Quantum Networks for Elementary Arithmetic Operations",
+      "abstract": "Quantum computers require quantum arithmetic. We provide an explicit construction of quantum networks effecting basic arithmetic operations: from addition to modular exponentiation. Quantum modular exponentiation seems to be the most difficult (time and space consuming) part of Shor's quantum factorising algorithm. We show that the auxiliary memory required to perform this operation in a reversible way grows linearly with the size of the number to be factorised.",
+      "authors": [
+        "V. Vedral",
+        "A. Barenco",
+        "A. Ekert"
+      ],
+      "published": "1995-11-16",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "concentrating-partial-entanglement-by-local",
+      "arxiv_id": "quant-ph/9511030",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/quant-ph/9511030v1",
+      "url_pdf": "https://arxiv.org/pdf/quant-ph/9511030v1.pdf",
+      "title": "Concentrating Partial Entanglement by Local Operations",
+      "abstract": "If two separated observers are supplied with entanglement, in the form of $n$ pairs of particles in identical partly-entangled pure states, one member of each pair being given to each observer; they can, by local actions of each observer, concentrate this entanglement into a smaller number of maximally-entangled pairs of particles, for example Einstein-Podolsky-Rosen singlets, similarly shared between the two observers. The concentration process asymptotically conserves {\\em entropy of entanglement}---the von Neumann entropy of the partial density matrix seen by either observer---with the yield of singlets approaching, for large $n$, the base-2 entropy of entanglement of the initial partly-entangled pure state. Conversely, any pure or mixed entangled state of two systems can be produced by two classically-communicating separated observers, drawing on a supply of singlets as their sole source of entanglement.",
+      "authors": [
+        "Charles H. Bennett",
+        "Herbert J. Bernstein",
+        "Sandu Popescu",
+        "Benjamin Schumacher"
+      ],
+      "published": "1995-11-21",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "using-information-content-to-evaluate",
+      "arxiv_id": "cmp-lg/9511007",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/cmp-lg/9511007v1",
+      "url_pdf": "https://arxiv.org/pdf/cmp-lg/9511007v1.pdf",
+      "title": "Using Information Content to Evaluate Semantic Similarity in a Taxonomy",
+      "abstract": "This paper presents a new measure of semantic similarity in an IS-A taxonomy, based on the notion of information content. Experimental evaluation suggests that the measure performs encouragingly well (a correlation of r = 0.79 with a benchmark set of human similarity judgments, with an upper bound of r = 0.90 for human subjects performing the same task), and significantly better than the traditional edge counting approach (r = 0.66).",
+      "authors": [
+        "Philip Resnik"
+      ],
+      "published": "1995-11-29",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "approximate-quantum-fourier-transform-and",
+      "arxiv_id": "quant-ph/9601018",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/quant-ph/9601018v1",
+      "url_pdf": "https://arxiv.org/pdf/quant-ph/9601018v1.pdf",
+      "title": "Approximate Quantum Fourier Transform and Decoherence",
+      "abstract": "We discuss the advantages of using the approximate quantum Fourier transform (AQFT) in algorithms which involve periodicity estimations. We analyse quantum networks performing AQFT in the presence of decoherence and show that extensive approximations can be made before the accuracy of AQFT (as compared with regular quantum Fourier transform) is compromised. We show that for some computations an approximation may imply a better performance.",
+      "authors": [
+        "Adriano Barenco",
+        "Artur Ekert",
+        "Kalle-Antti Suominen",
+        "Päivi Törmä"
+      ],
+      "published": "1996-01-21",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "multi-spin-coding-of-the-monte-carlo",
+      "arxiv_id": "cond-mat/9601140",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/cond-mat/9601140v1",
+      "url_pdf": "https://arxiv.org/pdf/cond-mat/9601140v1.pdf",
+      "title": "Multi-Spin Coding of the Monte Carlo Simulation of the Three-State Random Potts Model and the Block-Spin Transformation",
+      "abstract": "The multi-spin coding of the Monte Carlo simulation of the three-state Potts model on the simple cubic lattice is presented. The ferromagnetic (F) model, the antiferromagnetic (AF) model, and the random mixture of the F and AF couplings are treated. The multi-spin coding technique is also applied to the block-spin transformation. The block-spin transformation of the F Potts model is simply realized by the majority rule, whereas the AF three-state Potts model is transformed to the block spin having a six-fold symmetry.",
+      "authors": [
+        "Macoto Kikuchi",
+        "Yutaka Okabe"
+      ],
+      "published": "1996-01-29",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "perfect-quantum-error-correction-code",
+      "arxiv_id": "quant-ph/9602019",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/quant-ph/9602019v1",
+      "url_pdf": "https://arxiv.org/pdf/quant-ph/9602019v1.pdf",
+      "title": "Perfect Quantum Error Correction Code",
+      "abstract": "We present a quantum error correction code which protects a qubit of information against general one qubit errors which maybe caused by the interaction with the environment. To accomplish this, we encode the original state by distributing quantum information over five qubits, the minimal number required for this task. We give a simple circuit which takes the initial state with four extra qubits in the state |0> to the encoded state. The circuit can be converted into a decoding one by simply running it backward. Reading the extra four qubits at the decoder's output we learn which one of the sixteen alternatives (no error plus all fifteen possible 1-bit errors) was realized. The original state of the encoded qubit can then be restored by a simple unitary transformation.",
+      "authors": [
+        "Raymond Laflamme",
+        "Cesar Miquel",
+        "Juan Pablo Paz",
+        "Wojciech Hubert Zurek"
+      ],
+      "published": "1996-02-27",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "pair-production-of-neutral-higgs-particles-in",
+      "arxiv_id": "hep-ph/9603205",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/hep-ph/9603205v1",
+      "url_pdf": "https://arxiv.org/pdf/hep-ph/9603205v1.pdf",
+      "title": "Pair Production of Neutral Higgs Particles in Gluon--Gluon Collisions",
+      "abstract": "Pair production processes of neutral Higgs particles will allow us to study the trilinear Higgs couplings at future high--energy colliders. Several mechanisms give rise to multi--Higgs final states in hadron interactions. In the present paper we investigate Higgs pair production in gluon--gluon collisions. After recapitulating pair production in the Standard Model, the analysis of the cross sections is carried out in detail for the neutral Higgs particles in the minimal supersymmetric extension.",
+      "authors": [
+        "T. Plehn",
+        "M. Spira",
+        "P. M. Zerwas"
+      ],
+      "published": "1996-03-01",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "mean-field-theory-for-sigmoid-belief-networks",
+      "arxiv_id": "cs/9603102",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/cs/9603102v1",
+      "url_pdf": "https://arxiv.org/pdf/cs/9603102v1.pdf",
+      "title": "Mean Field Theory for Sigmoid Belief Networks",
+      "abstract": "We develop a mean field theory for sigmoid belief networks based on ideas from statistical mechanics. Our mean field theory provides a tractable approximation to the true probability distribution in these networks; it also yields a lower bound on the likelihood of evidence. We demonstrate the utility of this framework on a benchmark problem in statistical pattern recognition---the classification of handwritten digits.",
+      "authors": [
+        "L. K. Saul",
+        "T. Jaakkola",
+        "M. I. Jordan"
+      ],
+      "published": "1996-03-01",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    },
+    {
+      "id": "a-line-of-sight-approach-to-cosmic-microwave",
+      "arxiv_id": "astro-ph/9603033",
+      "nips_id": null,
+      "url_abs": "https://arxiv.org/abs/astro-ph/9603033v1",
+      "url_pdf": "https://arxiv.org/pdf/astro-ph/9603033v1.pdf",
+      "title": "A Line of Sight Approach to Cosmic Microwave Background Anisotropies",
+      "abstract": "We present a new method for calculating linear cosmic microwave background (CMB) anisotropy spectra based on integration over sources along the photon past light cone. In this approach the temperature anisotropy is written as a time integral over the product of a geometrical term and a source term. The geometrical term is given by radial eigenfunctions which do not depend on the particular cosmological model. The source term can be expressed in terms of photon, baryon and metric perturbations, all of which can be calculated using a small number of differential equations. This split clearly separates between the dynamical and geometrical effects on the CMB anisotropies. More importantly, it allows to significantly reduce the computational time compared to standard methods. This is achieved because the source term, which depends on the model and is generally the most time consuming part of calculation, is a slowly varying function of wavelength and needs to be evaluated only in a small number of points. The geometrical term, which oscillates much more rapidly than the source term, does not depend on the particular model and can be precomputed in advance. Standard methods that do not separate the two terms and require a much higher number of evaluations. The new method leads to about two orders of magnitude reduction in CPU time when compared to standard methods and typically requires a few minutes on a workstation for a single model. The method should be especially useful for accurate determinations of cosmological parameters from CMB anisotropy and polarization measurements that will become possible with the next generation of experiments. A programm implementing this method can be obtained from the authors.",
+      "authors": [
+        "Uros Seljak",
+        "Matias Zaldarriaga"
+      ],
+      "published": "1996-03-08",
+      "conference": null,
+      "conference_url_abs": null,
+      "conference_url_pdf": null,
+      "proceeding": null
+    }
+  ]
+}
