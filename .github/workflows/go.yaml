@@ -8,6 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    env:
+      PAPERSWITHCODE_API_TOKEN: ${{ secrets.PAPERSWITHCODE_API_TOKEN }}
+
     steps:
       - uses: actions/checkout@v2
       - name: Set up Go 1.16
