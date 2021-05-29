@@ -1,13 +1,11 @@
 package paperswithcode_go
 
 import (
-	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
 	"github.com/codingpot/paperswithcode-go/internal/transport"
 	"net/http"
-	"net/url"
 	"time"
 )
 
@@ -51,38 +49,6 @@ type Client struct {
 type errorResponse struct {
 	Code    int    `json:"code"`
 	Message string `json:"message"`
-}
-
-// Method list used by Paper's ID
-type MethodList struct {
-	Count   int      `json:"count"`
-	Methods []Method `json:"results"`
-}
-
-type Method struct {
-	ID          string `json:"id"`
-	Name        string `json:"name"`
-	FullName    string `json:"full_name"`
-	Description string `json:"description"`
-	Paper       string `json:"paper"`
-}
-
-func (c *Client) GetMethodList(ctx context.Context, id string) (*MethodList, error) {
-	fmt.Println(id)
-	url := fmt.Sprintf("%s/papers/%s/methods", c.BaseURL, url.QueryEscape(id))
-	req, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return nil, err
-	}
-
-	req = req.WithContext(ctx)
-
-	res := MethodList{}
-	if err := c.sendRequest(req, &res); err != nil {
-		return nil, err
-	}
-
-	return &res, nil
 }
 
 func (c *Client) sendRequest(req *http.Request, v interface{}) error {

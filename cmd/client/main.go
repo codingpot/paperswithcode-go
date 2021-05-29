@@ -25,7 +25,7 @@ func main() {
 	fmt.Println()
 	fmt.Println()
 
-	methodList, _ := c.GetMethodList(ctx, paper)
+	methodList, _ := c.PaperMethodList(paper)
 	fmt.Println(methodList)
 	fmt.Println()
 	fmt.Println()
