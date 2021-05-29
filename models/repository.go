@@ -2,8 +2,10 @@ package models
 
 // RepositoryList contains code repositories implemented by a certain paper.
 type RepositoryList struct {
-	Count   int          `json:"count"`
-	Results []Repository `json:"results"`
+	Count    int64        `json:"count"`
+	Next     *string      `json:"next"`
+	Previous *string      `json:"previous"`
+	Results  []Repository `json:"results"`
 }
 
 type Repository struct {
