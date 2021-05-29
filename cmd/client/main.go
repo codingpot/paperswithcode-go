@@ -19,7 +19,7 @@ func main() {
 	paper := "generative adversarial networks"
 	paper = strings.ReplaceAll(paper, " ", "-")
 
-	paperList, _ := c.GetPaper(ctx, paper)
+	paperList, _ := c.PaperGet(paper)
 	fmt.Println(paperList)
 	fmt.Println()
 	fmt.Println()
