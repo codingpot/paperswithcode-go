@@ -25,7 +25,7 @@ func TestClient_PaperResultList(t *testing.T) {
 				ID:       "657bb1c5-de55-4afc-ba54-0af74eaab5e2",
 				BestRank: &one,
 				Metrics: map[string]string{
-					bestMetric: "85.1%",
+					bestMetric: "84.2",
 				},
 				Methodology:        "HRNet-OCR (Hierarchical Multi-Scale Attention)",
 				UsesAdditionalData: false,
