@@ -1,4 +1,7 @@
 # paperswithcode-go
+[![Go](https://github.com/codingpot/paperswithcode-go/actions/workflows/go.yaml/badge.svg)](https://github.com/codingpot/paperswithcode-go/actions/workflows/go.yaml)
+[![Go Reference](https://pkg.go.dev/badge/github.com/codingpot/paperswithcode-go.svg)](https://pkg.go.dev/github.com/codingpot/paperswithcode-go)
+
 client code repository for paperswithcode's official APIs
 
 ```go
