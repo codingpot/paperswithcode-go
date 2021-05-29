@@ -31,3 +31,8 @@ func TestWithAPIToken(t *testing.T) {
 	assert.NoError(t, err)
 	assert.Equal(t, "Token MY_TOKEN", emptyRequest.Header.Get("Authorization"))
 }
+
+func TestTransportIsNotProvidedWhenNoAPIIsProvided(t *testing.T) {
+	c := NewClient()
+	assert.Nil(t, c.HTTPClient.Transport)
+}
