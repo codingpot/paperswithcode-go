@@ -194,7 +194,7 @@ func (p PaperListParams) Build() string {
 func (c *Client) PaperList(params PaperListParams) (*models.PaperListResult, error) {
 	papersListURL := c.BaseURL + "/papers?" + params.Build()
 
-	request, err := http.NewRequest(http.MethodGet, papersListURL /*body=*/, nil)
+	request, err := http.NewRequest(http.MethodGet, papersListURL, nil /*body*/)
 	if err != nil {
 		return nil, err
 	}
