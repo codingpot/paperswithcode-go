@@ -10,6 +10,9 @@ import "github.com/codingpot/paperswithcode-go"
 ```
 
 ```go
-APIToken := "<your-api-token>" // from https://paperswithcode.com/accounts/generate_api_token
-c := paperswithcode_go.NewClient(paperswithcode_go.WithAPIToken(token))
+c := paperswithcode_go.NewClient()
+papers, _ := c.PaperList(paperswithcode_go.PaperListParamsDefault())
+gan, _ := c.PaperGet(paperswithcode_go.GetPaperIDFromPaperTitle("Generative Adversarial Networks"))
 ```
+
+See go doc for reference.
