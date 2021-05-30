@@ -27,8 +27,3 @@ type PaperListResultItem struct {
 	ConferenceURLPDF *string        `json:"conference_url_pdf"`
 	Proceeding       *string        `json:"proceeding"`
 }
-
-func (p PaperListResultItem) String() string {
-	return fmt.Sprintf("ID: %s ArxivID: %v NipsID: %v, URLAbs: %s, URLPDF: %s Title: %s Authors: %s",
-		p.ID, p.ArxivID, p.NipsID, p.URLAbs, p.URLPDF, p.Title, p.Authors)
-}
