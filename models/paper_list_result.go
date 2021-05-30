@@ -1,7 +1,5 @@
 package models
 
-import "fmt"
-
 // PaperListResult is the result of PaperListResult() function.
 type PaperListResult struct {
 	Count    int64                 `json:"count"`
@@ -9,8 +7,6 @@ type PaperListResult struct {
 	Previous *string               `json:"previous"`
 	Results  []PaperListResultItem `json:"results"`
 }
-
-var _ fmt.Stringer = (*PaperListResultItem)(nil)
 
 type PaperListResultItem struct {
 	ID               string         `json:"id"`
