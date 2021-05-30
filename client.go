@@ -1,18 +1,19 @@
 package paperswithcode_go
 
 import (
-	"github.com/codingpot/paperswithcode-go/internal/transport"
 	"net/http"
 	"regexp"
 	"strings"
 	"time"
+
+	"github.com/codingpot/paperswithcode-go/internal/transport"
 )
 
 const (
 	BaseURL = "https://paperswithcode.com/api/v1"
 )
 
-var whiteSpaceRegexp = regexp.MustCompile("\\s+")
+var whiteSpaceRegexp = regexp.MustCompile(`\s+`)
 
 // ClientOption can be used to swap the default http client or swap the API key
 type ClientOption func(*Client)
