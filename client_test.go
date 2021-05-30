@@ -1,6 +1,7 @@
 package paperswithcode_go
 
 import (
+	"fmt"
 	"github.com/codingpot/paperswithcode-go/internal/testutils"
 	"net/http"
 	"net/http/httptest"
@@ -35,4 +36,36 @@ func TestWithAPIToken(t *testing.T) {
 func TestTransportIsNotProvidedWhenNoAPIIsProvided(t *testing.T) {
 	c := NewClient()
 	assert.Nil(t, c.HTTPClient.Transport)
+}
+
+func ExampleGetPaperIDFromPaperTitle() {
+	paperTitle := "Generative Adversarial Networks"
+	fmt.Println(GetPaperIDFromPaperTitle(paperTitle))
+	// Output: generative-adversarial-networks
+}
+
+func TestGetPaperIDFromPaperTitle(t *testing.T) {
+	tests := []struct {
+		paperTitle  string
+		wantPaperID string
+	}{
+		{
+			paperTitle:  "This Is Paper",
+			wantPaperID: "this-is-paper",
+		},
+		{
+			paperTitle:  "This        Is Paper",
+			wantPaperID: "this-is-paper",
+		},
+		{
+			paperTitle:  "This-Is-Paper",
+			wantPaperID: "this-is-paper",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(fmt.Sprintf("The ID of %s should be %s", tt.paperTitle, tt.wantPaperID),
+			func(t *testing.T) {
+				assert.Equal(t, tt.wantPaperID, GetPaperIDFromPaperTitle(tt.paperTitle))
+			})
+	}
 }
