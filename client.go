@@ -85,39 +85,6 @@ func (c *Client) GetMethodList(ctx context.Context, id string) (*MethodList, err
 	return &res, nil
 }
 
-// Repository List implementing by Paper's ID
-type RepositoryList struct {
-	Count   int          `json:"count"`
-	Results []Repository `json:"results"`
-}
-
-type Repository struct {
-	URL         string `json:"url"`
-	IsOfficial  bool   `json:"is_official"`
-	Description string `json:"description"`
-	Stars       int    `json:"stars"`
-	Framework   string `json:"framework"`
-}
-
-func (c *Client) GetRepositoryList(ctx context.Context, id string) (*RepositoryList, error) {
-	fmt.Println(id)
-	url := fmt.Sprintf("%s/papers/%s/repositories", c.BaseURL, url.QueryEscape(id))
-	req, err := http.NewRequest("GET", url, nil)
-
-	if err != nil {
-		return nil, err
-	}
-
-	req = req.WithContext(ctx)
-
-	res := RepositoryList{}
-	if err := c.sendRequest(req, &res); err != nil {
-		return nil, err
-	}
-
-	return &res, nil
-}
-
 func (c *Client) sendRequest(req *http.Request, v interface{}) error {
 	req.Header.Set("Content-Type", "application/json; charset=utf-8")
 	req.Header.Set("Accept", "application/json; charset=utf-8")

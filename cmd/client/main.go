@@ -31,7 +31,7 @@ func main() {
 	fmt.Println()
 	fmt.Println()
 
-	repositoryList, _ := c.GetRepositoryList(ctx, paper)
+	repositoryList, _ := c.PaperRepositoryList(paper)
 	fmt.Println(repositoryList)
 	fmt.Println()
 	fmt.Println()
