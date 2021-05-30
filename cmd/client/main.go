@@ -1,7 +1,6 @@
 package main
 
 import (
-	"context"
 	"fmt"
 	"github.com/codingpot/paperswithcode-go"
 	"os"
@@ -15,7 +14,6 @@ func main() {
 	}
 
 	c := paperswithcode_go.NewClient(paperswithcode_go.WithAPIToken(token))
-	ctx := context.Background()
 	paper := "generative adversarial networks"
 	paper = strings.ReplaceAll(paper, " ", "-")
 
@@ -25,7 +23,7 @@ func main() {
 	fmt.Println()
 	fmt.Println()
 
-	methodList, _ := c.GetMethodList(ctx, paper)
+	methodList, _ := c.PaperMethodList(paper)
 	fmt.Println(methodList)
 	fmt.Println()
 	fmt.Println()
