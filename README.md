@@ -12,7 +12,7 @@ For Python version, see https://github.com/paperswithcode/paperswithcode-client
 ## Quick usage example
 
 ```go
-import "github.com/codingpot/paperswithcode-go"
+import "github.com/codingpot/paperswithcode-go/v2"
 ```
 
 ```go
