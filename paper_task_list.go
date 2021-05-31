@@ -3,7 +3,7 @@ package paperswithcode_go
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/codingpot/paperswithcode-go/models"
+	"github.com/codingpot/paperswithcode-go/v2/models"
 	"net/url"
 )
 

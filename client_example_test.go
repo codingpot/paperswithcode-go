@@ -3,7 +3,7 @@ package paperswithcode_go_test
 import (
 	"fmt"
 
-	paperswithcode_go "github.com/codingpot/paperswithcode-go"
+	paperswithcode_go "github.com/codingpot/paperswithcode-go/v2"
 )
 
 func Example() {

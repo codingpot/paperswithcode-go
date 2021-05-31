@@ -1,7 +1,7 @@
 package paperswithcode_go
 
 import (
-	"github.com/codingpot/paperswithcode-go/models"
+	"github.com/codingpot/paperswithcode-go/v2/models"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

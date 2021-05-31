@@ -1,4 +1,4 @@
-module github.com/codingpot/paperswithcode-go
+module github.com/codingpot/paperswithcode-go/v2
 
 go 1.16
 

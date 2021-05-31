@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/codingpot/paperswithcode-go/internal/transport"
+	"github.com/codingpot/paperswithcode-go/v2/internal/transport"
 )
 
 const (

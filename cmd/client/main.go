@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/codingpot/paperswithcode-go"
+	"github.com/codingpot/paperswithcode-go/v2"
 	"os"
 	"strings"
 )

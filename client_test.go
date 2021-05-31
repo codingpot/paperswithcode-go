@@ -2,7 +2,7 @@ package paperswithcode_go
 
 import (
 	"fmt"
-	"github.com/codingpot/paperswithcode-go/internal/testutils"
+	"github.com/codingpot/paperswithcode-go/v2/internal/testutils"
 	"net/http"
 	"net/http/httptest"
 	"testing"
