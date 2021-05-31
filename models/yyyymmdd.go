@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+// YyyyMmDdDashed is the special date type to parse YYYY-MM-DD format.
 type YyyyMmDdDashed time.Time
 
 func (y *YyyyMmDdDashed) UnmarshalJSON(bytes []byte) error {

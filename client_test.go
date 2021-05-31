@@ -28,14 +28,14 @@ func TestWithAPIToken(t *testing.T) {
 	emptyRequest, err := http.NewRequest(http.MethodGet, server.URL, nil)
 
 	assert.NoError(t, err)
-	_, err = c.HTTPClient.Transport.RoundTrip(emptyRequest)
+	_, err = c.httpClient.Transport.RoundTrip(emptyRequest)
 	assert.NoError(t, err)
 	assert.Equal(t, "Token MY_TOKEN", emptyRequest.Header.Get("Authorization"))
 }
 
 func TestTransportIsNotProvidedWhenNoAPIIsProvided(t *testing.T) {
 	c := NewClient()
-	assert.Nil(t, c.HTTPClient.Transport)
+	assert.Nil(t, c.httpClient.Transport)
 }
 
 func ExampleGetPaperIDFromPaperTitle() {

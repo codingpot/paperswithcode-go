@@ -7,9 +7,10 @@ import (
 	"net/url"
 )
 
+// PaperTaskList returns tasks (an area of research) for the given paper.
 func (c *Client) PaperTaskList(paperID string) (*models.TaskList, error) {
-	pURL := fmt.Sprintf("%s/papers/%s/tasks/", c.BaseURL, url.QueryEscape(paperID))
-	resp, err := c.HTTPClient.Get(pURL)
+	pURL := fmt.Sprintf("%s/papers/%s/tasks/", c.baseURL, url.QueryEscape(paperID))
+	resp, err := c.httpClient.Get(pURL)
 	if err != nil {
 		return nil, err
 	}

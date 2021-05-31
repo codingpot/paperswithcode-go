@@ -9,8 +9,8 @@ import (
 
 // PaperGet returns a single paper. Note that paperID is hyphen cased (e.g., generative-adversarial-networks).
 func (c *Client) PaperGet(paperID string) (*models.Paper, error) {
-	paperGetURL := fmt.Sprintf("%s/papers/%s/", c.BaseURL, url.QueryEscape(paperID))
-	response, err := c.HTTPClient.Get(paperGetURL)
+	paperGetURL := fmt.Sprintf("%s/papers/%s/", c.baseURL, url.QueryEscape(paperID))
+	response, err := c.httpClient.Get(paperGetURL)
 	if err != nil {
 		return nil, err
 	}

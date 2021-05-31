@@ -7,10 +7,11 @@ import (
 	"net/url"
 )
 
+// PaperResultList returns the evaluation results of the paper.
 func (c *Client) PaperResultList(paperID string) (*models.ResultList, error) {
-	pURL := fmt.Sprintf("%s/papers/%s/results", c.BaseURL, url.QueryEscape(paperID))
+	pURL := fmt.Sprintf("%s/papers/%s/results", c.baseURL, url.QueryEscape(paperID))
 
-	resp, err := c.HTTPClient.Get(pURL)
+	resp, err := c.httpClient.Get(pURL)
 	if err != nil {
 		return nil, err
 	}

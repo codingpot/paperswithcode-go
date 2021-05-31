@@ -22,15 +22,15 @@ type ClientOption func(*Client)
 func WithAPIToken(apiToken string) ClientOption {
 	return func(client *Client) {
 		client.apiToken = apiToken
-		client.HTTPClient.Transport = transport.NewTransportWithAuthHeader(apiToken)
+		client.httpClient.Transport = transport.NewTransportWithAuthHeader(apiToken)
 	}
 }
 
 // NewClient creates a Client object.
 func NewClient(opts ...ClientOption) *Client {
 	defaultClient := &Client{
-		BaseURL: BaseURL,
-		HTTPClient: &http.Client{
+		baseURL: BaseURL,
+		httpClient: &http.Client{
 			Timeout: time.Minute,
 		},
 	}
@@ -43,11 +43,13 @@ func NewClient(opts ...ClientOption) *Client {
 }
 
 type Client struct {
-	BaseURL    string
-	HTTPClient *http.Client
+	baseURL    string
+	httpClient *http.Client
 	apiToken   string
 }
 
+// GetPaperIDFromPaperTitle generates a paper ID from paper title.
+// WARNING: This function does not cover all cases.
 func GetPaperIDFromPaperTitle(paperTitle string) string {
 	return strings.ToLower(whiteSpaceRegexp.ReplaceAllString(paperTitle, "-"))
 }

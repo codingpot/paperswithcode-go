@@ -1,5 +1,6 @@
 package models
 
+// Result is the evaluation result from a paper.
 type Result struct {
 	ID                 string            `json:"id"`
 	BestRank           *int              `json:"best_rank"`

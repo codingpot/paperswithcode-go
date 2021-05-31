@@ -2,7 +2,6 @@ package models
 
 import (
 	"testing"
-	"time"
 )
 
 func TestYyyyMmDdDashed_UnmarshalJSON(t *testing.T) {
@@ -17,7 +16,7 @@ func TestYyyyMmDdDashed_UnmarshalJSON(t *testing.T) {
 	}{
 		{
 			name:     "2021-05-01 is a valid YyyyMmDdDashed type",
-			expected: YyyyMmDdDashed(time.Date(2021, 5, 1, 0, 0, 0, 0, time.UTC)),
+			expected: NewYyyyMmDdDashed(2021, 5, 1),
 			args: args{
 				inputDateString: "2021-05-01",
 			},
@@ -25,7 +24,7 @@ func TestYyyyMmDdDashed_UnmarshalJSON(t *testing.T) {
 		},
 		{
 			name:     "20210501 is NOT a valid YyyyMmDdDashed type",
-			expected: YyyyMmDdDashed(time.Date(2021, 5, 1, 0, 0, 0, 0, time.UTC)),
+			expected: NewYyyyMmDdDashed(2021, 5, 1),
 			args: args{
 				inputDateString: "20210501",
 			},
