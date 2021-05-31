@@ -7,7 +7,7 @@ import (
 	"net/url"
 )
 
-func (c *Client) PaperList(params PaperListParams) (*models.PaperListResult, error) {
+func (c *Client) PaperList(params PaperListParams) (*models.PaperList, error) {
 	papersListURL := c.BaseURL + "/papers?" + params.Build()
 
 	response, err := c.HTTPClient.Get(papersListURL)
@@ -15,7 +15,7 @@ func (c *Client) PaperList(params PaperListParams) (*models.PaperListResult, err
 		return nil, err
 	}
 
-	var paperListResult models.PaperListResult
+	var paperListResult models.PaperList
 
 	err = json.NewDecoder(response.Body).Decode(&paperListResult)
 	if err != nil {

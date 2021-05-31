@@ -1,14 +1,14 @@
 package models
 
-// PaperListResult is the result of PaperListResult() function.
-type PaperListResult struct {
-	Count    int64                 `json:"count"`
-	Next     *string               `json:"next"`
-	Previous *string               `json:"previous"`
-	Results  []PaperListResultItem `json:"results"`
+// PaperList is the result of PaperList() function.
+type PaperList struct {
+	Count    int64   `json:"count"`
+	Next     *string `json:"next"`
+	Previous *string `json:"previous"`
+	Results  []Paper `json:"results"`
 }
 
-type PaperListResultItem struct {
+type Paper struct {
 	ID               string         `json:"id"`
 	ArxivID          *string        `json:"arxiv_id"`
 	NipsID           *string        `json:"nips_id"`
