@@ -3,13 +3,14 @@ package paperswithcode_go
 import (
 	"encoding/json"
 	"fmt"
+	"strings"
+
 	"github.com/codingpot/paperswithcode-go/v2/models"
-	"net/url"
 )
 
 // PaperList returns multiple papers.
 func (c *Client) PaperList(params PaperListParams) (*models.PaperList, error) {
-	papersListURL := c.baseURL + "/papers?" + params.build()
+	papersListURL := c.baseURL + "/papers?" + params.Build()
 
 	response, err := c.httpClient.Get(papersListURL)
 	if err != nil {
@@ -28,27 +29,41 @@ func (c *Client) PaperList(params PaperListParams) (*models.PaperList, error) {
 
 // PaperListParams is the parameter for PaperList method.
 type PaperListParams struct {
-	// Query to search papers (default: "")
+	// Q to search papers (default: "")
 	// If empty, it returns all papers.
-	Query string
+	Q        string
+	ArxivID  string
+	Title    string
+	Abstract string
 	// Page is the number of page to search (default: 1)
 	Page int
-	// Limit returns how many papers are returned in a single response.
-	Limit int
+	// ItemsPerPage returns how many papers are returned in a single response.
+	ItemsPerPage int
 }
 
-func (p PaperListParams) build() string {
-	if p.Query == "" {
-		return fmt.Sprintf("items_per_page=%d&page=%d", p.Limit, p.Page)
+func (p PaperListParams) Build() string {
+	var b strings.Builder
+	b.WriteString(fmt.Sprintf("page=%d&items_per_page=%d", p.Page, p.ItemsPerPage))
+
+	addParamsIfValid(&b, "q", p.Q)
+	addParamsIfValid(&b, "arxiv_id", p.ArxivID)
+	addParamsIfValid(&b, "title", p.Title)
+	addParamsIfValid(&b, "abstract", p.Abstract)
+
+	return b.String()
+}
+
+func addParamsIfValid(b *strings.Builder, key string, value string) {
+	if value != "" {
+		b.WriteString(fmt.Sprintf("&%s=%s", key, value))
 	}
-	return fmt.Sprintf("q=%s&items_per_page=%d&page=%d", url.QueryEscape(p.Query), p.Limit, p.Page)
 }
 
 // PaperListParamsDefault returns the default PaperListParams.
 func PaperListParamsDefault() PaperListParams {
 	return PaperListParams{
-		Query: "",
-		Page:  1,
-		Limit: 50,
+		Q:            "",
+		Page:         1,
+		ItemsPerPage: 50,
 	}
 }
