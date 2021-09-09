@@ -1,7 +1,6 @@
 package paperswithcode_go
 
 import (
-	"encoding/json"
 	"fmt"
 	"strings"
 
@@ -11,20 +10,9 @@ import (
 // PaperList returns multiple papers.
 func (c *Client) PaperList(params PaperListParams) (*models.PaperList, error) {
 	papersListURL := c.baseURL + "/papers?" + params.Build()
-
-	response, err := c.httpClient.Get(papersListURL)
-	if err != nil {
-		return nil, err
-	}
-
 	var paperListResult models.PaperList
-
-	err = json.NewDecoder(response.Body).Decode(&paperListResult)
-	if err != nil {
-		return nil, err
-	}
-
-	return &paperListResult, nil
+	err := c.sendGetRequest(papersListURL, &paperListResult)
+	return &paperListResult, err
 }
 
 // PaperListParams is the parameter for PaperList method.

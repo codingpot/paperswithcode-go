@@ -1,7 +1,6 @@
 package paperswithcode_go
 
 import (
-	"encoding/json"
 	"fmt"
 	"github.com/codingpot/paperswithcode-go/v2/models"
 )
@@ -19,18 +18,7 @@ func (m MethodListParams) String() string {
 
 func (c *Client) MethodList(params MethodListParams) (*models.MethodList, error) {
 	url := c.baseURL + "/methods?" + params.String()
-
-	response, err := c.httpClient.Get(url)
-	if err != nil {
-		return nil, err
-	}
-
 	var listResult models.MethodList
-
-	err = json.NewDecoder(response.Body).Decode(&listResult)
-	if err != nil {
-		return nil, err
-	}
-
-	return &listResult, nil
+	err := c.sendGetRequest(url, &listResult)
+	return &listResult, err
 }

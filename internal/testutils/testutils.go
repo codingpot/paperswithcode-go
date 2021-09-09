@@ -13,7 +13,6 @@ func MustExtractAPITokenFromEnv() string {
 	return apiToken
 }
 
-
 // ToStringPtr returns a pointer to the given string.
 func ToStringPtr(s string) *string {
 	return &s

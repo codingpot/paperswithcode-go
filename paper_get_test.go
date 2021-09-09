@@ -6,7 +6,7 @@ import (
 )
 
 func TestClient_PaperGet(t *testing.T) {
-	c := NewClient(WithAPIToken(apiToken))
+	c := NewClient()
 	got, err := c.PaperGet("generative-adversarial-networks")
 	assert.NoError(t, err)
 	assert.Equal(t, "generative-adversarial-networks", got.ID)
