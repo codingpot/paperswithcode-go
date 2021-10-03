@@ -2,19 +2,12 @@ package paperswithcode_go
 
 import (
 	"fmt"
-	"github.com/codingpot/paperswithcode-go/v2/internal/testutils"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
-
-var apiToken string
-
-func init() {
-	apiToken = testutils.MustExtractAPITokenFromEnv()
-}
 
 func TestWithAPIToken(t *testing.T) {
 	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {

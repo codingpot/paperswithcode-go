@@ -1,10 +1,12 @@
 package paperswithcode_go
 
 import (
-	"fmt"
 	"github.com/codingpot/paperswithcode-go/v2/models"
+	"net/url"
+	"strconv"
 )
 
+// MethodListParams is an argument object to MethodList.
 type MethodListParams struct {
 	// Page (default: 1)
 	Page int
@@ -12,13 +14,18 @@ type MethodListParams struct {
 	ItemsPerPage int
 }
 
-func (m MethodListParams) String() string {
-	return fmt.Sprintf("page=%d&items_per_page=%d", m.Page, m.ItemsPerPage)
+// Build used to expand `MethodListParams` to URL path params.
+func (m MethodListParams) Build() string {
+	return url.Values{
+		"page":           []string{strconv.Itoa(m.Page)},
+		"items_per_page": []string{strconv.Itoa(m.ItemsPerPage)},
+	}.Encode()
 }
 
+// MethodList fetches a list of "methods" that can be used in research papers.
 func (c *Client) MethodList(params MethodListParams) (*models.MethodList, error) {
-	url := c.baseURL + "/methods?" + params.String()
+	u := c.baseURL + "/methods?" + params.Build()
 	var listResult models.MethodList
-	err := c.sendGetRequest(url, &listResult)
+	err := c.sendGetRequest(u, &listResult)
 	return &listResult, err
 }

@@ -66,3 +66,41 @@ func TestClient_MethodList(t *testing.T) {
 func toPtr(s string) *string {
 	return &s
 }
+
+func TestMethodListParams_Build(t *testing.T) {
+	type fields struct {
+		Page         int
+		ItemsPerPage int
+	}
+	tests := []struct {
+		name   string
+		fields fields
+		want   string
+	}{
+		{
+			name: "default values are parsed as URL params",
+			fields: fields{
+				Page:         0,
+				ItemsPerPage: 0,
+			},
+			want: "items_per_page=0&page=0",
+		},
+		{
+			name: "some values are parsed as URL params",
+			fields: fields{
+				Page:         1,
+				ItemsPerPage: 1234,
+			},
+			want: "items_per_page=1234&page=1",
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			m := MethodListParams{
+				Page:         tt.fields.Page,
+				ItemsPerPage: tt.fields.ItemsPerPage,
+			}
+			assert.Equal(t, tt.want, m.Build())
+		})
+	}
+}
