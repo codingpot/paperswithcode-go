@@ -1,10 +1,9 @@
 package paperswithcode_go
 
 import (
-	"fmt"
-	"strings"
-
 	"github.com/codingpot/paperswithcode-go/v2/models"
+	"net/url"
+	"strconv"
 )
 
 // PaperList returns multiple papers.
@@ -30,20 +29,21 @@ type PaperListParams struct {
 }
 
 func (p PaperListParams) Build() string {
-	var b strings.Builder
-	b.WriteString(fmt.Sprintf("page=%d&items_per_page=%d", p.Page, p.ItemsPerPage))
+	b := url.Values{}
+	b.Set("page", strconv.Itoa(p.Page))
+	b.Set("items_per_page", strconv.Itoa(p.ItemsPerPage))
 
-	addParamsIfValid(&b, "q", p.Q)
-	addParamsIfValid(&b, "arxiv_id", p.ArxivID)
-	addParamsIfValid(&b, "title", p.Title)
-	addParamsIfValid(&b, "abstract", p.Abstract)
+	addParamsIfValid(b, "q", p.Q)
+	addParamsIfValid(b, "arxiv_id", p.ArxivID)
+	addParamsIfValid(b, "title", p.Title)
+	addParamsIfValid(b, "abstract", p.Abstract)
 
-	return b.String()
+	return b.Encode()
 }
 
-func addParamsIfValid(b *strings.Builder, key string, value string) {
+func addParamsIfValid(b url.Values, key string, value string) {
 	if value != "" {
-		b.WriteString(fmt.Sprintf("&%s=%s", key, value))
+		b.Set(key, value)
 	}
 }
 

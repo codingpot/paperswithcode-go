@@ -7,7 +7,7 @@ import (
 )
 
 func TestClient_PaperList(t *testing.T) {
-	client := NewClient(WithAPIToken(apiToken))
+	client := NewClient()
 	_, err := client.PaperList(PaperListParamsDefault())
 	assert.NoError(t, err)
 }
@@ -33,7 +33,7 @@ func TestPaperListParams_Build(t *testing.T) {
 				Page:         1,
 				ItemsPerPage: 50,
 			},
-			want: "page=1&items_per_page=50&q=wow",
+			want: "items_per_page=50&page=1&q=wow",
 		},
 		{
 			name: "Q is not given, it shouldn't add Q param",
@@ -41,12 +41,12 @@ func TestPaperListParams_Build(t *testing.T) {
 				Page:         1,
 				ItemsPerPage: 50,
 			},
-			want: "page=1&items_per_page=50",
+			want: "items_per_page=50&page=1",
 		},
 		{
 			name:   "Default Param is valid",
 			fields: fields(PaperListParamsDefault()),
-			want:   "page=1&items_per_page=50",
+			want:   "items_per_page=50&page=1",
 		},
 	}
 	for _, tt := range tests {
