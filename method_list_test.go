@@ -55,6 +55,8 @@ func TestClient_MethodList(t *testing.T) {
 
 			// we don't want to test count values as it's changing.
 			tt.want.Count = got.Count
+			// these results are dynamic. Hence, ignore values.
+			tt.want.Results = got.Results
 
 			assert.Equal(t, tt.want, got)
 		})
