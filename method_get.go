@@ -8,7 +8,5 @@ import (
 // See https://paperswithcode-client.readthedocs.io/en/latest/api/client.html#paperswithcode.client.PapersWithCodeClient.method_list
 func (c *Client) MethodGet(methodID string) (models.Method, error) {
 	url := c.baseURL + "/methods/" + methodID
-	var result models.Method
-	err := c.sendGetRequest(url, &result)
-	return result, err
+	return getJson[models.Method](c, url)
 }

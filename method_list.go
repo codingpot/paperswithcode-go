@@ -25,7 +25,5 @@ func (m MethodListParams) Build() string {
 // MethodList fetches a list of "methods" that can be used in research papers.
 func (c *Client) MethodList(params MethodListParams) (models.MethodList, error) {
 	u := c.baseURL + "/methods?" + params.Build()
-	var listResult models.MethodList
-	err := c.sendGetRequest(u, &listResult)
-	return listResult, err
+	return getJson[models.MethodList](c, u)
 }

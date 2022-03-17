@@ -9,9 +9,7 @@ import (
 // PaperList returns multiple papers.
 func (c *Client) PaperList(params PaperListParams) (models.PaperList, error) {
 	papersListURL := c.baseURL + "/papers?" + params.Build()
-	var paperListResult models.PaperList
-	err := c.sendGetRequest(papersListURL, &paperListResult)
-	return paperListResult, err
+	return getJson[models.PaperList](c, papersListURL)
 }
 
 // PaperListParams is the parameter for PaperList method.

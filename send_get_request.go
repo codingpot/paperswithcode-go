@@ -2,11 +2,17 @@ package paperswithcode_go
 
 import "encoding/json"
 
-func (c *Client) sendGetRequest(url string, result interface{}) error {
-	response, err := c.httpClient.Get(url)
+func getJson[T any](client *Client, url string) (T, error) {
+	var result T
+	response, err := client.httpClient.Get(url)
+
 	if err != nil {
-		return err
+		return result, err
 	}
 
-	return json.NewDecoder(response.Body).Decode(result)
+	if err := json.NewDecoder(response.Body).Decode(&result); err != nil {
+		return result, err
+	}
+
+	return result, nil
 }
