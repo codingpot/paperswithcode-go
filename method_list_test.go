@@ -10,7 +10,7 @@ func TestClient_MethodList(t *testing.T) {
 	tests := []struct {
 		name    string
 		params  MethodListParams
-		want    *models.MethodList
+		want    models.MethodList
 		wantErr bool
 	}{
 		{
@@ -19,10 +19,10 @@ func TestClient_MethodList(t *testing.T) {
 				Page:         1,
 				ItemsPerPage: 2,
 			},
-			want: &models.MethodList{
+			want: models.MethodList{
 				Next:     toPtr("https://paperswithcode.com/api/v1/methods/?items_per_page=2&page=2"),
 				Previous: nil,
-				Results: []*models.Method{
+				Results: []models.Method{
 					{
 						ID:          "1cycle",
 						Name:        "1cycle",

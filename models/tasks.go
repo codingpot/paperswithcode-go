@@ -11,5 +11,5 @@ type TaskList struct {
 	Count    int     `json:"count"`
 	Next     *string `json:"next"`
 	Previous *string `json:"previous"`
-	Results  []*Task `json:"results"`
+	Results  []Task  `json:"results"`
 }

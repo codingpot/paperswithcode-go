@@ -27,16 +27,16 @@ func WithAPIToken(apiToken string) ClientOption {
 }
 
 // NewClient creates a Client object.
-func NewClient(opts ...ClientOption) *Client {
-	defaultClient := &Client{
+func NewClient(opts ...ClientOption) Client {
+	defaultClient := Client{
 		baseURL: BaseURL,
-		httpClient: &http.Client{
+		httpClient: http.Client{
 			Timeout: time.Minute,
 		},
 	}
 
 	for _, opt := range opts {
-		opt(defaultClient)
+		opt(&defaultClient)
 	}
 
 	return defaultClient
@@ -44,7 +44,7 @@ func NewClient(opts ...ClientOption) *Client {
 
 type Client struct {
 	baseURL    string
-	httpClient *http.Client
+	httpClient http.Client
 	apiToken   string
 }
 

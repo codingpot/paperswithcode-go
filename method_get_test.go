@@ -11,13 +11,13 @@ func TestClient_MethodGet(t *testing.T) {
 	tests := []struct {
 		name     string
 		methodID string
-		want     *models.Method
+		want     models.Method
 		wantErr  bool
 	}{
 		{
 			name:     "With a correct methodID, it returns a method",
 			methodID: "multi-head-attention",
-			want: &models.Method{
+			want: models.Method{
 				ID:          "multi-head-attention",
 				Name:        "Multi-Head Attention",
 				FullName:    "Multi-Head Attention",

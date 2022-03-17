@@ -12,11 +12,11 @@ func TestClient_PaperMethodList(t *testing.T) {
 	got, err := c.PaperMethodList(paperID)
 	assert.NoError(t, err)
 
-	expected := &models.MethodList{
+	expected := models.MethodList{
 		Count:    2,
 		Next:     nil,
 		Previous: nil,
-		Results: []*models.Method{
+		Results: []models.Method{
 			{
 				ID:          "gan",
 				Name:        "GAN",

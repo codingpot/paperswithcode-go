@@ -11,11 +11,11 @@ func TestClient_PaperTaskList(t *testing.T) {
 	got, err := c.PaperTaskList("generative-adversarial-networks")
 	assert.NoError(t, err)
 
-	expected := &models.TaskList{
+	expected := models.TaskList{
 		Count:    0,
 		Next:     nil,
 		Previous: nil,
-		Results:  []*models.Task{},
+		Results:  []models.Task{},
 	}
 	assert.Equal(t, expected, got)
 }

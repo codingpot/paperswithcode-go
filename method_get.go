@@ -6,9 +6,9 @@ import (
 
 // MethodGet returns a method in a paper.
 // See https://paperswithcode-client.readthedocs.io/en/latest/api/client.html#paperswithcode.client.PapersWithCodeClient.method_list
-func (c *Client) MethodGet(methodID string) (*models.Method, error) {
+func (c *Client) MethodGet(methodID string) (models.Method, error) {
 	url := c.baseURL + "/methods/" + methodID
 	var result models.Method
 	err := c.sendGetRequest(url, &result)
-	return &result, err
+	return result, err
 }
